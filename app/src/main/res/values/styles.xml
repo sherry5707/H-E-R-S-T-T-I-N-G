@@ -1,0 +1,181 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="animation_translucent" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/fullscreen_enter</item>
+        <item name="android:windowExitAnimation">@anim/fullscreen_exit</item>
+        <item name="android:taskOpenExitAnimation">@anim/fullscreen_exit</item>
+        <item name="android:activityOpenExitAnimation">@anim/fullscreen_exit</item>
+    </style>
+
+    <style name="theme_main" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/animation_main</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="animation_main" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/mainscreen_enter</item>
+        <item name="android:windowExitAnimation">@anim/mainscreen_exit</item>
+    </style>
+
+    <style name="AppTheme" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="Setting_TipText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22px</item>
+        <item name="android:textColor">#FF808080</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Setting_InfoText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22px</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Setting_SettingText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/setting_common_text_size</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Setting_AboutTextLeft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">31sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Setting_AboutTextRight1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">26px</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="Setting_AboutTextRight2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">26px</item>
+        <item name="android:textColor">#3E62FF</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Full_Transparent">
+        <item name="android:windowBackground">@color/activity_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowOverscan">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Dialog_Transparent">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowOverscan">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/color_power_background</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>  //Dialog的windowFrame框为无
+        <item name="android:windowOverscan">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>  //是否浮现在activity之上
+        <item name="android:windowNoTitle">true</item>  //是否显示title
+        <item name="android:windowBackground">@drawable/dialog_shape_bg</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:alertDialogStyle">@style/AlertDialog_bg</item>
+    </style>
+
+    <style name="AlertDialog_bg">
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+    </style>
+
+    <style name="Custom_Progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowOverscan">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="progress_bar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name = "android:indeterminateTint">@color/progress_bar</item>
+        <item name = "android:indeterminateTintMode">src_in</item>
+    </style>
+
+    <style name="SeekBarLayoutMarginStyle">
+        <item name="android:layout_marginLeft">@dimen/seekbar_layout_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/seekbar_layout_margin_right</item>
+    </style>
+
+    <style name="SeekBarStyle">
+        <item name="android:maxHeight">35px</item>
+        <item name="android:minHeight">35px</item>
+        <item name="android:paddingStart">10px</item>
+        <item name="android:paddingEnd">10px</item>
+        <item name="android:thumbOffset">10px</item>
+        <item name="android:layout_marginLeft">26px</item>
+    </style>
+
+    <style name="SettingsAnimationTranslucent" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/settings_fullscreen_enter</item>
+        <item name="android:windowExitAnimation">@anim/settings_fullscreen_exit</item>
+    </style>
+
+    <style name="HerSettingsStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/SettingsAnimationTranslucent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <style name="TestAlertDialogStyle">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="PersonalCenterNormalTextStyle">
+        <item name="android:textSize">30px</item>
+        <item name="android:textColor">@color/user_name_color</item>
+    </style>
+
+    <style name="PersonalCenterButtonTextStyle">
+        <item name="android:textSize">26px</item>
+        <item name="android:textColor">@color/blue_text_button_color</item>
+    </style>
+</resources>

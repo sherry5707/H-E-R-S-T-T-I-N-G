@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/wifi_locked_0_bar"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@drawable/wifi_locked_1_bar"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@drawable/wifi_locked_2_bar"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@drawable/wifi_locked_3_bar"
+        android:maxLevel="3"/>
+    <item
+        android:drawable="@drawable/wifi_locked_full_bar"
+        android:maxLevel="4"/>
+</level-list>

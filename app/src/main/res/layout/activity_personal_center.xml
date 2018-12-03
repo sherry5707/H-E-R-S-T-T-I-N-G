@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_bg_2"
+    tools:context=".view.activity.PersonalCenterActivity">
+
+    <include layout="@layout/personal_headline"/>
+    <!--<RelativeLayout
+        android:id="@+id/headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:background="@drawable/btn_back"
+            android:onClick="backButtonClicked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_personal_center"
+            android:textSize="38px"
+            android:textColor="@color/title_color" />
+    </RelativeLayout>-->
+
+    <ImageView
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_below="@id/headline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34px"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/avatar_outer_bg"/>
+
+    <com.kinstalk.her.settings.view.widget.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="135px"
+        android:layout_height="135px"
+        android:layout_below="@id/headline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46px"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/default_avatar"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6px"
+        android:layout_marginBottom="26px"
+        style="@style/PersonalCenterNormalTextStyle"
+        android:text="@string/default_user_name"/>
+
+    <LinearLayout
+        android:id="@+id/switch_number"
+        android:layout_width="match_parent"
+        android:layout_height="83px"
+        android:layout_below="@id/user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="62px"
+        android:layout_marginRight="54px"
+        android:background="@drawable/round_4_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="29px"
+            android:layout_marginRight="12px"
+            android:gravity="left"
+            android:text="@string/phone_number"
+            style="@style/PersonalCenterNormalTextStyle"/>
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/gray_text_color"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/bind_or_switch_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="27px"
+            android:gravity="right"
+            android:onClick="bindOrSwitchNumber"
+            android:text="@string/bind_phone_number"
+            style="@style/PersonalCenterButtonTextStyle"/>
+    </LinearLayout>
+</RelativeLayout>

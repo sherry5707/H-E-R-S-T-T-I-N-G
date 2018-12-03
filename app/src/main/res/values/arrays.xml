@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="qlove_power_list">
+        <item>关机</item>
+        <item>重启</item>
+        <item>取消</item>
+    </string-array>
+</resources>

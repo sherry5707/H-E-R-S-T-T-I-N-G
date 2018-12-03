@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alert_dialog_height">128dp</dimen>
+
+    <dimen name="setting_title_text_size">36px</dimen>
+    <dimen name="setting_pref_major_size">36px</dimen>
+    <dimen name="setting_pref_minor_size">24px</dimen>
+
+    <dimen name="power_key_text_size">16.92sp</dimen>
+
+    <dimen name="bt_playing_song_size">33.85sp</dimen>
+    <dimen name="bt_playing_info_size">24.62sp</dimen>
+    <dimen name="bt_playing_devicename_size">16.92sp</dimen>
+
+    <dimen name="dialog_info_title_size">36px</dimen>
+    <dimen name="dialog_info_content_size">36px</dimen>
+    <dimen name="dialog_info_content_minor_size">28px</dimen>
+    <dimen name="dialog_button_text_size">20px</dimen>
+
+    <dimen name="setting_ai_text_size">36px</dimen>
+
+    <dimen name="bt_device_name_size">36px</dimen>
+    <dimen name="bt_device_status_size">36px</dimen>
+
+    <dimen name="setting_common_text_size">24px</dimen>
+
+    <dimen name="wifi_scan_text_size">36px</dimen>
+    <dimen name="wifi_device_name_size">36px</dimen>
+    <dimen name="wifi_device_status_size">36px</dimen>
+    <dimen name="wifi_password_done_size">24px</dimen>
+    <dimen name="wifi_password_text_size">36px</dimen>
+    <dimen name="wifi_connect_status_size">24px</dimen>
+
+    <dimen name="progress_content_size">36px</dimen>
+    <dimen name="progress_details_size">20px</dimen>
+
+    <dimen name="toast_info_size">36px</dimen>
+
+    <dimen name="try_2_say_size">20sp</dimen>
+
+    <dimen name="seekbar_layout_margin_left">54px</dimen>
+    <dimen name="seekbar_layout_margin_right">50px</dimen>
+</resources>

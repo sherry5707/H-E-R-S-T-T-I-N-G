@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/progress_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30px"
+        android:paddingRight="36px">
+
+        <TextView
+            android:id="@+id/txtview_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:text="@string/bluetooth_searchstart"
+            android:textColor="@color/minor_text_color"
+            android:textSize="@dimen/wifi_scan_text_size"
+            android:fontFamily="zh-Hans"/>
+
+        <ImageView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/scan_icon"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_group"
+        android:listSelector="@drawable/list_item_background"
+        android:cacheColorHint="@android:color/transparent"
+        android:dividerHeight="0px"
+        android:divider="@null"/>
+
+</RelativeLayout>

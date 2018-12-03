@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background">
+
+    <TextView
+        android:id="@+id/song_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/bt_playing_song_size"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/playing_bg"
+        android:src="@drawable/disc_shadow"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_marginTop="141dp" />
+        <!--android:layout_marginLeft="432.67dp"/> -->
+
+    <ImageView
+        android:id="@+id/playing_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignTop="@+id/playing_bg"
+        android:src="@drawable/disc_play"/>
+
+    <TextView
+        android:id="@+id/device_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playing_bg"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/bt_playing_info_size"
+        android:text="@string/bt_src_device_tip"
+        android:includeFontPadding="false"/>
+
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/device_tip"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/bt_playing_devicename_size"
+        android:includeFontPadding="false"/>
+</RelativeLayout>

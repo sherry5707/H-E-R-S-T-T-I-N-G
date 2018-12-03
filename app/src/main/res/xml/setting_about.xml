@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:preference="http://schemas.android.com/apk/res/com.kinstalk.her.settings"
+                  android:title="@string/settings_about_title">
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="device_name"
+        preference:setting_title="@string/setting_about_name"
+        preference:setting_info="@string/setting_about_name_value"/>
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="device_serial"
+        preference:setting_title="@string/setting_about_deviceid"
+        preference:setting_info=""/>
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="device_version"
+        preference:setting_title="@string/setting_about_version"
+        preference:setting_info=""/>
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="device_service_provider"
+        preference:setting_title="@string/setting_about_content"
+        preference:setting_info="@string/setting_about_content_value"/>
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="device_customer_service"
+        preference:setting_title="@string/setting_about_custom_service"
+        preference:setting_info="@string/setting_about_custom_service_content"/>
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="report_problem"
+        preference:setting_title="@string/setting_about_report_problem"
+        preference:setting_info=""/>
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="device_update"
+        preference:setting_title="@string/setting_about_upgrade"
+        preference:setting_info=""/>
+
+<!--    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="device_unbind"
+        preference:setting_title="@string/setting_about_unbind_account"
+        preference:setting_info=""/>-->
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="device_recovery"
+        preference:setting_title="@string/setting_about_recovery"
+        preference:setting_info=""/>
+</PreferenceScreen>

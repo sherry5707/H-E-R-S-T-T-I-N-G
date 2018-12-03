@@ -1,0 +1,123 @@
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-ignorewarnings
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-keepattributes SourceFile, LineNumberTable
+
+-keep class android.annotation.** { *; }
+-keep class android.support.** { *; }
+-dontwarn android.support.**
+-dontwarn android.annotation.**
+
+-keep class android.annotation.** { *; }
+-keep class android.support.** { *; }
+-keep class com.aps.** { *; }
+-keep class com.handmark.pulltorefresh.library.** { *; }
+-keep class com.autonavi.** { *; }
+-keep class com.google.** { *; }
+-keep class com.etrump.jni.** { *; }
+-keep class com.umeng.** { *; }
+-keep class com.baidu.** { *; }
+-keep class uk.co.senab.photoview.** { *; }
+-keep class pl.droidsonroids.gif.** { *; }
+-keep class com.nineoldandroids.** { *; }
+-keep class com.nostra13.universalimageloader.** { *; }
+-keep class org.slf4j.** { *; }
+-keep class com.squareup.okhttp.** { *; }
+-keep class android.annotation.** { *; }
+-keep class com.jg.** { *; }
+-keep class android.support.** { *; }
+-keep class okio.** { *; }
+-keep class org.apache.mina.** { *; }
+-keep class net.sqlcipher.** { *; }
+-keep class com.dream.lottery.entity.** { *; }
+-keep class com.dream.lottery.entity.http.response.** { *; }
+-keep class bolts.** { *; }
+-keep class com.facebook.** { *; }
+-keep class javax.annotation.** { *; }
+-keep class de.greenrobot.event.** { *; }
+
+-keep class * implements java.io.Serializable {
+    public static final java.io.Serializable *;
+}
+#不混淆序列化类
+-keep class * implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+#不混淆带有native方法的类
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+#对于所有类，有这个构造函数不进行混淆,主要是为了在layout中的，自定义的view
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+#对于所有类，有这个构造函数不进行混淆,主要是为了在layout中的，自定义的view
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+# Preserve the special static methods that are required in all enumeration classes.
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+#Eventbus3.0+
+-keepattributes *Annotation*
+
+-keepclassmembers class ** {
+    @org.greenrobot.eventbus.Subscribe <methods>;
+}
+
+-keep enum org.greenrobot.eventbus.ThreadMode { *; }
+
+# Only required if you use AsyncExecutor
+-keepclassmembers class * extends org.greenrobot.eventbus.util.ThrowableFailureEvent {
+    <init>(java.lang.Throwable);
+}
+
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.**
+
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+
+-dontwarn android.support.**
+-dontwarn com.amap.api.**
+-dontwarn com.handmark.pulltorefresh.**
+-dontwarn org.apache.mina.**
+-dontwarn org.slf4j.**
+-dontwarn com.alibaba.**
+-dontwarn okio.**
+-dontwarn pl.droidsonroids.**
+-dontwarn com.squareup.**
+-dontwarn com.facebook.**
+-dontwarn org.codehaus.jackson.**
+-dontwarn com.facebook.**
+-dontwarn com.umeng.**
+-dontwarn org.apache.http.**
+-dontwarn com.tencent.**
+-dontwarn it.sephiroth.android.library.**
+-dontwarn uk.co.senab.photoview.**
+-dontwarn com.huawei.android.**
+-dontwarn com.squareup.**
+-dontwarn android.app.Notification
+-dontwarn com.sina.**
+-dontwarn net.sqlcipher.**
+-dontwarn com.googlecode.**
+-dontwarn okhttp3.**

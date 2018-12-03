@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="wifi_scanner_bg">#2C4EEF</color>
+
+    <color name="activity_background">#BF000000</color>
+    <color name="colorGray">#7B7B7B</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlue">#2889FF</color>
+
+    <color name="list_item_normal">@android:color/transparent</color>
+    <color name="list_item_pressed">#0D000000</color>
+    <color name="list_head_normal">#FF7B7B7B</color>
+    <color name="list_head_pressed">#667B7B7B</color>
+
+    <color name="cutting_line">#4A4A4A</color>
+    <color name="progress_bar">#50E3C2</color>
+    <color name="color_power_background">#BF000000</color>
+
+    <color name="positive_button_bg_color">#B3FFFFFF</color>
+    <color name="negative_button_bg_color">#0077FF</color>
+    <color name="button_border_color">#7B7B7B</color>
+
+    <color name="radio_button_select_color">#000000</color>
+    <color name="radio_button_normal_color">#80000000</color>
+    <color name="radio_button_disabled_color">#33000000</color>
+
+    <color name="dialog_title_color">@android:color/white</color>
+    <color name="dialog_content_color">#80FFFFFF</color>
+
+    <color name="background">#0F1B24</color>
+    <color name="toast_background">#F20F1B24</color>
+    <color name="dialog_background">#F20F1B24</color>
+    <color name="major_text_color">#000000</color>
+    <color name="minor_text_color">#4A4A4A</color>
+
+    <color name="wifi_connecting">#60CBF2</color>
+    <color name="wifi_pwd_wrong">#F35568</color>
+
+    <color name="progress_text_color">#000000</color>
+    <color name="back_narrow">#000000</color>
+    <color name="wifi_clear_all">#98A0A2</color>
+    <color name="toast_text_color">#FFFFFF</color>
+    <color name="progress_dialog_content_text_color">#FFFFFF</color>
+
+    <!--personal center-->
+    <color name="phone_number_textview_bg">#a5ffffff</color>
+    <color name="title_color">#005A98</color>
+    <color name="user_name_color">#182F43</color>
+    <color name="gray_text_color">#999999</color>
+    <color name="blue_text_button_color">#1F97FB</color>
+    <color name="submit_button_color">#32AFFF</color>
+    <color name="outer_ring_color">#E2F3FE</color>
+    <color name="disable_fetch_code_colr">#7c7e7f</color>
+</resources>

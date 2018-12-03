@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/seekbars_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/SeekBarLayoutMarginStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="53px"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+<!--        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/settting_music" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settting_music"
+            android:textSize="23dp"
+            android:textColor="@color/colorBlack"/>
+
+        <include
+            android:id="@+id/music_seekbar"
+            layout="@layout/fragment_settings_seekbar" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/SeekBarLayoutMarginStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settting_alarm"
+            android:textSize="23dp"
+            android:textColor="@color/colorBlack"/>
+<!--        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/settting_alarm" />-->
+
+        <include
+            android:id="@+id/alarm_seekbar"
+            layout="@layout/fragment_settings_seekbar" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/SeekBarLayoutMarginStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="59px"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+<!--        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting_bright" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_bright"
+            android:textSize="23dp"
+            android:textColor="@color/colorBlack"/>
+
+        <include
+            android:id="@+id/bright_seekbar"
+            layout="@layout/fragment_settings_seekbar" />
+    </LinearLayout>
+</LinearLayout>

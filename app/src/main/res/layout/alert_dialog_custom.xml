@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800px"
+    android:layout_height="480px"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="39px"
+        android:layout_marginRight="39px"
+        android:layout_marginTop="44px">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/major_text_color"
+            android:textSize="@dimen/dialog_info_content_minor_size"/>
+
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_text"
+            android:layout_marginTop="3px"
+            android:includeFontPadding="false"
+            android:textColor="@color/major_text_color"
+            android:textSize="@dimen/dialog_info_content_minor_size"/>
+
+        <TextView
+            android:id="@+id/context_minor_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_text"
+            android:layout_marginTop="10px"
+            android:includeFontPadding="false"
+            android:textColor="@color/minor_text_color"
+            android:textSize="@dimen/dialog_info_content_minor_size"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="35px"
+        android:layout_marginBottom="42px"
+        android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:id="@+id/negative_button"
+            android:layout_width="131px"
+            android:layout_height="40px"
+            android:background="@drawable/negative_button_bg"
+            android:gravity="center"
+            android:text="@string/negative_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dialog_button_text_size" />
+
+        <Button
+            android:id="@+id/positive_button"
+            android:layout_width="131px"
+            android:layout_height="40px"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@+id/negative_button"
+            android:background="@drawable/positive_button_bg"
+            android:text="@string/positive_text"
+            android:textColor="@color/negative_button_bg_color"
+            android:textSize="@dimen/dialog_button_text_size" />
+    </RelativeLayout>
+</LinearLayout>

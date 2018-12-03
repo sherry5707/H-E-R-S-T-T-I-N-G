@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_setting_background"
+    android:orientation="vertical"
+    tools:context=".view.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/time_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36px"
+            android:layout_gravity="left"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/home_btn"
+                android:onClick="homeButtonClicked" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39px"
+            android:layout_gravity="left"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/screen_button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/shuimian_btn"
+                android:onClick="screenButtonClicked" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sleep" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47px"
+            android:gravity="center_horizontal"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/iot_button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/iot_btn"
+                android:onClick="iotButtonClicked" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/iot" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47px"
+            android:gravity="center_horizontal"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/andlink_button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/andlink_icon"
+                android:onClick="andlinkButtonClicked" />
+
+            <TextView
+                android:id="@+id/andlink_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/andlink" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_gravity="left"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/media_frame_layout"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="16.6dp"></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="43px"
+            android:layout_gravity="right"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/privacy_button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/privacy_btn"
+                android:onClick="privacyButtonClicked" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="37dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/settings_button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/b_shezhi_xuan"
+                android:onClick="settingButtonClicked" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.kinstalk.her.settings.view.fragment.HerSetttingFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="21px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="17px" />
+
+</LinearLayout>

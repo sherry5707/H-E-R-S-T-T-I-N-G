@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/her_settings_background">
+
+    <RelativeLayout
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px">
+        <ImageView
+            android:id="@+id/back_button"
+            android:src="@drawable/setting_back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="24px"
+            android:tint="@color/back_narrow"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/password_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="39px"
+            android:layout_centerVertical="true"
+            android:text="@string/wifi_password_done"
+            android:fontFamily="zh-Hans"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/wifi_password_done_size"
+            android:textColor="@color/color_pwd_done"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/control"
+        android:layout_marginTop="8px">
+        <EditText
+            android:id="@+id/wifi_auth_password"
+            android:layout_width="467px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:background="@android:color/transparent"
+            android:inputType="textVisiblePassword"
+            android:hint="@string/wifi_password_tip"
+            android:textColorHint="@color/minor_text_color"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/wifi_password_text_size"
+            android:text=""
+            android:paddingRight="30px"
+            android:fontFamily="zh-Hans"
+            android:textColor="@color/major_text_color"/>
+
+        <ImageView
+            android:id="@+id/clear_all"
+            android:src="@drawable/clear_all"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:tint="@color/wifi_clear_all"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/input"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="18px"
+        android:src="@drawable/cutting_line"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:layout_below="@+id/input"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="18px"
+        style="@style/progress_bar"
+        android:indeterminate="true"
+        android:visibility="invisible"/><!--true value for indeterminate-->
+
+    <ImageView
+        android:id="@+id/wrong_pwd_divider"
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:layout_below="@+id/input"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="18px"
+        android:src="@drawable/cutting_line_2"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:text="@string/wifi_wrong_password"
+        android:includeFontPadding="false"
+        android:fontFamily="zh-Hans"
+        android:textSize="@dimen/wifi_connect_status_size"
+        android:textColor="@color/major_text_color"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

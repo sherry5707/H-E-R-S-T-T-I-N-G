@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_bg_2"
+    android:orientation="vertical"
+    tools:context=".view.activity.BindPhoneNumActivity">
+
+    <include layout="@layout/personal_headline"/>
+<!--    <RelativeLayout
+        android:id="@+id/headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:background="@drawable/btn_back"
+            android:onClick="backButtonClicked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/bind_phone_number"
+            android:textSize="38px"
+            android:textColor="@color/title_color" />
+    </RelativeLayout>-->
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/number_layout"
+                android:layout_width="match_parent"
+                android:layout_height="83px"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/headline"
+                android:layout_marginLeft="56px"
+                android:layout_marginRight="60px"
+                android:layout_marginTop="33px"
+                android:background="@drawable/round_2_top_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="35px"
+                    android:layout_marginRight="40px"
+                    android:gravity="left"
+                    android:text="@string/phone_number"
+                    style="@style/PersonalCenterNormalTextStyle"/>
+
+                <EditText
+                    android:id="@+id/phone_number_input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="28px"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:numeric="integer"
+                    android:imeOptions="actionDone|flagNoFullscreen"
+                    android:hint="@string/phone_number_hint"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="56px"
+                android:layout_marginRight="60px"
+                android:background="@color/gray_text_color"/>
+            <LinearLayout
+                android:id="@+id/verification_layout"
+                android:layout_width="match_parent"
+                android:layout_height="83px"
+                android:layout_below="@id/number_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="56px"
+                android:layout_marginRight="60px"
+                android:background="@drawable/round_2_bottom_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="35px"
+                    android:layout_marginRight="40px"
+                    android:gravity="left"
+                    android:text="@string/verification_code"
+                    style="@style/PersonalCenterNormalTextStyle"/>
+
+                <EditText
+                    android:id="@+id/verification_code_input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/verification_hint"
+                    android:imeOptions="actionDone|flagNoFullscreen"
+                    android:textSize="28px"
+                    android:maxLength="6"
+                    android:numeric="integer"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"/>
+
+                <com.kinstalk.her.settings.view.widget.CountDownTextView
+                    android:id="@+id/bind_or_switch_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:gravity="right"
+                    app:cdt_hint_text="@string/countdown_hint"
+                    app:cdt_countdown_time="60000"
+                    app:cdt_normal_text="@string/get_verification_code"
+                    app:cdt_usable_color="@color/blue_text_button_color"
+                    app:cdt_unusable_color="@color/gray_text_color"
+                    android:onClick="getVerificationCode"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/confirm"
+                android:layout_width="220px"
+                android:layout_height="60px"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="90px"
+                android:layout_below="@id/verification_layout"
+                android:textColor="@color/white"
+                android:background="@drawable/personal_submit_bg"
+                android:text="@string/confirm_text"
+                android:onClick="bindPhoneNumber"
+                android:textSize="28px"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

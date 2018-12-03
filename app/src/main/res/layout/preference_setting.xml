@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47px">
+        <TextView
+            android:id="@+id/setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="title"
+            android:includeFontPadding="false"
+            android:textColor="@color/major_text_color"
+            android:textSize="@dimen/setting_title_text_size"
+            android:fontFamily="zh-Hans"/>
+
+        <TextView
+            android:id="@+id/setting_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="info"
+            android:textColor="@color/minor_text_color"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/setting_pref_major_size"
+            android:fontFamily="zh-Hans"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/info"
+        android:layout_marginTop="17px"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/cutting_line"/>
+
+</RelativeLayout>

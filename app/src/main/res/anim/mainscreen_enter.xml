@@ -1,0 +1,10 @@
+<!--
+  ~ Copyright (c) 2016. Beijing Shuzijiayuan, All Rights Reserved.
+  ~ Beijing Shuzijiayuan Confidential and Proprietary
+  -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator">
+    <translate android:fromYDelta="-100%p"
+        android:toYDelta="0%p"
+        android:duration="500" />
+</set>

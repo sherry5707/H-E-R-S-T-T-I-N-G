@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingLeft="30px"
+                android:paddingRight="36px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="10px">
+<!--        <ImageView
+            android:id="@+id/wifi_signal_icon"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wifi_signal_icon"/>-->
+
+        <TextView
+            android:id="@+id/wifi_ssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_centerVertical="true"
+            android:text="wifi ssid"
+            android:textColor="@color/major_text_color"
+            android:fontFamily="zh-Hans"
+            android:textSize="@dimen/wifi_device_name_size"/>
+
+        <TextView
+            android:id="@+id/wifi_connect_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/wifi_not_connected"
+            android:textColor="@color/minor_text_color"
+            android:fontFamily="zh-Hans"
+            android:textSize="@dimen/wifi_device_status_size"/>
+        <ImageView
+            android:id="@+id/connecting_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/scan_icon"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/cutting_line"/>
+
+</RelativeLayout>

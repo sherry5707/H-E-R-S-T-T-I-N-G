@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kinstalk.her.settings"
+    coreApp="true"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    
+    <permission android:name="com.kinstalk.her.settings.data.wifi.WifiIotProvider.READ"
+        android:label="iotprovider read" android:protectionLevel="normal"/>
+    <permission android:name="com.kinstalk.her.settings.data.wifi.WifiIotProvider.WRITE"
+        android:label="iotprovider write" android:protectionLevel="normal"/>
+
+    <application
+        android:name=".HerSettingsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.kinstalk.her.settings.glide.CustomGlideModule"
+            android:value="GlideModule" />
+
+        <activity android:name="com.kinstalk.her.settings.view.activity.MainActivity"
+            android:theme="@style/theme_main"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.kinstalk.her.settings.view.activity.HerSettingsActivity"
+            android:launchMode="singleTask"
+            android:exported="true"
+            android:theme="@style/HerSettingsStyle">
+        </activity>
+
+        <receiver android:name=".data.wifi.WifiReceiver">
+            <intent-filter android:priority="998">
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.SCAN_RESULTS" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.kinstalk.her.settings.data.receiver.BootBroadcast">
+            <intent-filter android:priority="10">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.kinstalk.her.settings.data.receiver.BluetoothPairingRequest" android:exported="true" >
+            <intent-filter android:priority="10">
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.kinstalk.her.settings.data.receiver.CaptivePortalLoginReceiver" >
+            <intent-filter>
+                <action android:name="com.android.her.settings.CaptivePortalLogin" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="ly.count.android.sdk.ReferrerReceiver" android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.kinstalk.her.settings.service.BluetoothService"
+            android:exported="false">
+        </service>
+        <service android:name="com.kinstalk.her.settings.service.CaptivePortalLoginService"
+                 android:exported="false">
+        </service>
+
+        <!-- 设备管理 -->
+        <!-- 其中，permission表示此功能所需的权限；
+        android:name="android.app.device_admin"表示这个动作的跳转界面 -->
+        <receiver
+            android:name=".service.AdminReceiver"
+            android:label="@string/app_name"
+            android:description="@string/app_name"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/lock"/>
+            <intent-filter>
+                <action
+                    android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- WifiConfigProvider -->
+        <provider
+            android:authorities="com.kinstalk.her.settings.data.wifi.WifiIotProvider"
+            android:name=".data.wifi.WifiIotProvider"
+            android:readPermission="com.kinstalk.her.settings.data.wifi.WifiIotProvider.READ"
+            android:writePermission="com.kinstalk.her.settings.data.wifi.WifiIotProvider.WRITE"
+            android:exported="true">
+        </provider>
+
+        <activity
+            android:name=".view.activity.PersonalCenterActivity"
+            android:theme="@style/HerSettingsStyle"/>
+        <activity
+            android:name=".view.activity.BindPhoneNumActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/HerSettingsStyle"/>
+    </application>
+
+</manifest>

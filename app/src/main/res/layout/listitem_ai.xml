@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+    <TextView
+        android:id="@+id/ai_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5px"
+        android:text="ai"
+        android:includeFontPadding="false"
+        android:textColor="@color/major_text_color"
+        android:textSize="@dimen/setting_ai_text_size"
+        android:fontFamily="zh-Hans"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/ai_text"
+        android:layout_marginTop="17px"
+        android:layout_marginBottom="44px"
+        android:src="@drawable/cutting_line"/>
+
+</RelativeLayout>

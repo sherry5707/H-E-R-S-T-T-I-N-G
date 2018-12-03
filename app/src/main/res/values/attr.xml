@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingPreference">
+        <attr name="setting_title" format="string"></attr>
+        <attr name="setting_info" format="string"></attr>
+        <attr name="setting_info_major" format="boolean"></attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/wifi_scan_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30px"
+        android:paddingRight="36px">
+
+        <TextView
+            android:id="@+id/scan_status_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:text="@string/wifi_not_scan"
+            android:textColor="@color/minor_text_color"
+            android:textSize="@dimen/wifi_scan_text_size"
+            android:fontFamily="zh-Hans"/>
+
+        <ImageView
+            android:id="@+id/wifi_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/scan_icon"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:background="@android:color/transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/connected_wifi_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/wifi_scan_status"
+        android:paddingLeft="30px"
+        android:paddingRight="36px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="10px">
+<!--            <ImageView
+                android:id="@+id/wifi_signal_icon"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wifi_signal_icon"/>-->
+
+            <TextView
+                android:id="@+id/wifi_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:text="wifi ssid"
+                android:textColor="@color/major_text_color"
+                android:textSize="@dimen/wifi_device_name_size"
+                android:fontFamily="zh-Hans"/>
+
+            <TextView
+                android:id="@+id/wifi_connect_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/wifi_connected"
+                android:textColor="@color/major_text_color"
+                android:textSize="@dimen/wifi_device_status_size"
+                android:fontFamily="zh-Hans"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="777px"
+            android:layout_height="2px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/cutting_line"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/head_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/transparent"
+        android:visibility="gone"/>
+</LinearLayout>

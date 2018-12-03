@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/factory_test"
+            style="@style/TestAlertDialogStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tntFactoryTest" />
+
+        <TextView
+            android:id="@+id/links"
+            style="@style/TestAlertDialogStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/links" />
+
+        <TextView
+            android:id="@+id/ai_info"
+            style="@style/TestAlertDialogStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ai_info" />
+
+        <TextView
+            android:id="@+id/ai_configuration"
+            style="@style/TestAlertDialogStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ai_configuration" />
+
+        <TextView
+            android:id="@+id/development_opition"
+            style="@style/TestAlertDialogStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/development_opition" />
+
+        <TextView
+            android:id="@+id/version_head"
+            style="@style/TestAlertDialogStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/version_head" />
+
+        <TextView
+            android:id="@+id/diplay_seleted_item_tv"
+            style="@style/TestAlertDialogStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_service_url" />
+
+        <RadioGroup
+            android:id="@+id/choose_service_url"
+            style="@style/TestAlertDialogStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/test_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="@string/test_url" />
+
+            <RadioButton
+                android:id="@+id/normal_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="@string/normal_url" />
+
+            <RadioButton
+                android:id="@+id/other_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="@string/other_url" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

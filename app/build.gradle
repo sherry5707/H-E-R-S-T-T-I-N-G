@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.kinstalk.her.settings"
+        minSdkVersion 22
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        debugConfig {
+            storeFile file("magellan.keystore")
+            storePassword "android"
+            keyAlias "magellan_debugkey"
+            keyPassword "android"
+
+        }
+    }
+
+    buildTypes {
+        release {
+
+            buildConfigField("boolean", "IS_RELEASE", "true")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+
+            signingConfig signingConfigs.debugConfig
+
+            buildConfigField("boolean", "IS_RELEASE", "false")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support.constraint:constraint-layout:1.0.0'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.android.support:preference-v7:25.2.0'
+    testCompile 'junit:junit:4.12'
+    compile('com.kinstalk.android:qlovehttpsdklib:+') {
+        transitive = true
+    }
+
+    compile 'com.kinstalk.android:m4publicowner:1.0.5'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:okhttp-integration:1.4.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
+    provided files('libs/framework.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    //eventbus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile('com.kinstalk.android:zxingcore:1.0.1@aar') {
+        transitive = true
+    }
+    provided "com.kinstalk.common:kinstalk-common:+"
+    compile 'kinstalk.com.countly:kinstalkcountly:+'
+    // Okhttp3
+    api "com.squareup.okhttp3:okhttp:$rootProject.okhttp3Version"
+    api "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttp3LoggingVersion"
+}

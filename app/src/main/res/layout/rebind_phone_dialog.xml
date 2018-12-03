@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/rebind_alert_bg"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/PersonalCenterNormalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="67px"
+        android:text="@string/alert_rebind_dialog_content_1" />
+
+    <TextView
+        style="@style/PersonalCenterNormalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/alert_rebind_dialog_content_2" />
+
+    <TextView
+        android:id="@+id/i_know"
+        android:layout_width="190px"
+        android:layout_height="54px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34px"
+        android:layout_marginBottom="45px"
+        android:background="@drawable/personal_submit_bg"
+        android:gravity="center"
+        android:text="@string/i_know"
+        android:clickable="true"
+        android:textColor="@color/white" />
+</LinearLayout>

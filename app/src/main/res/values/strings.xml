@@ -1,0 +1,234 @@
+<resources>
+    <!-- 设置主页面 -->
+    <string name="home">首页</string>
+    <string name="sleep">睡眠</string>
+    <string name="iot">智慧家庭中心</string>
+    <string name="andlink">和家亲快连</string>
+    <string name="privacy">勿扰</string>
+    <string name="setting">设置</string>
+    <string name="app_name">设置</string>
+    <string name="title_activity_her_settings">HerSettingsActivity</string>
+    <string name="settings_bluetooth_title">"蓝牙配件"</string>
+    <string name="settings_network_title">"网络设置"</string>
+    <!--<string name="settings_setting_title">"常用设置"</string>-->
+    <string name="settings_ai_title">"语音助手"</string>
+    <string name="setting_change_wx_account_title">"更换微信账号"</string>
+    <string name="setting_personal_center">个人中心</string>
+    <string name="settings_about_title">关于亲见</string>
+    <string name="settings_not_connect">"未连接"</string>
+
+    <!-- 常用设置 -->
+    <string name="settting_ring">铃声音量</string>
+    <string name="settting_music">媒体音量</string>
+    <string name="settting_alarm">闹铃音量</string>
+    <string name="setting_bright">屏幕亮度</string>
+    <string name="setting_bright_auto">自动亮度调节</string>
+
+    <!-- 关于 -->
+    <string name="setting_about_name">"设备名称"</string>
+    <string name="setting_about_name_value">"好童学儿童智能终端"</string>
+    <string name="setting_about_deviceid">"设备序列号"</string>
+    <string name="setting_about_version">"软件版本号"</string>
+    <string name="setting_about_content">"内容合作方"</string>
+    <string name="setting_about_content_value">"深圳市腾讯计算机系统有限公司"</string>
+    <string name="setting_about_custom_service">"客服电话"</string>
+    <string name="setting_about_custom_service_content">"400-0123-917"</string>
+    <string name="setting_about_report_problem">"我要反馈"</string>
+    <string name="setting_about_upgrade">"系统升级"</string>
+    <string name="setting_about_unbind_account">"解除腾讯云小微"</string>
+    <string name="setting_about_recovery">"恢复出厂设置"</string>
+    <string name="unbind_confirm_title">"您确定解绑腾讯云小微吗？"</string>
+    <string name="unbind_confirm_content">"解绑后，设备将不能正常使用，需要您绑定云小微后才能正常使用"</string>
+    <string name="unbind_no_network">"网络不可用，解绑失败"</string>
+    <string name="unbind_bad_network">"网络不给力，解绑失败"</string>
+    <string name="unbind_processing">"解除绑定中..."</string>
+    <string name="unbind_tts_content">您已成功解绑腾讯云小微，设备无法正常使用了呢，请用手机绑定云小微</string>
+    <string name="factoryreset_ongoing">"正在清除数据"</string>
+    <string name="factoryreset_warning">"请稍后"</string>
+
+    <!-- 恢复出厂设置 -->
+    <string name="factoryreset_battery_level_low">电量需20%以上才能恢复出厂设置，请充电！</string>
+    <string name="factoryreset_confirm_title">确定恢复出厂设置吗？</string>
+    <string name="factoryreset_confimr_content">恢复出厂设置将清除所有数据</string>
+    <string name="factoryreset_info_title">"恢复出厂设置"</string>
+
+    <!-- WiFi -->
+    <string name="wifi_auth_tips">请输入 “%1$s” 的密码</string>
+    <string name="wifi_delete_title">确定删除 “%1$s” 吗？</string>
+    <string name="wifi_delete_tips">删除后网络连接会中断</string>
+    <string name="wifi_lost_tip">"找不到网络了"</string>
+    <string name="wifi_restore">"网络已恢复正常"</string>
+    <string name="wifi_invalid_password">"您输入的密码位数太短"</string>
+    <string name="wifi_scan_timeout_tips">扫描超时\n请重试</string>
+    <string name="wifi_connected">"已连接"</string>
+    <string name="wifi_not_connected">"未连接"</string>
+    <string name="wifi_connecting">"连接中..."</string>
+    <string name="wifi_not_scan">"点击搜索可用的WLAN"</string>
+    <string name="wifi_scanning">"正在搜索可用的WLAN..."</string>
+    <string name="wifi_password_done">"完成"</string>
+    <string name="wifi_password_tip">"请输入WLAN的密码"</string>
+    <string name="wifi_captive_login_notification_title">"已连接网络"</string>
+    <string name="wifi_captive_login_notification_content">"需要您通过验证后才能正常上网"</string>
+    <string name="wifi_wrong_password">密码错误</string>
+    <string name="wifi_password_verifying">识别中...</string>
+    <string name="wifi_password_verified">当前WLAN不可接入，请尝试连接其他WLAN</string>
+
+    <string name="connect_succeed">网络连接成功</string>
+    <string name="connect_failed">网络连接失败\n请重试</string>
+    <string name="goback">返回</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="connect">连接</string>
+    <string name="scan">扫描</string>
+
+    <!-- MMI -->
+    <string name="tntFactoryTest">工厂测试</string>
+    <string name="links">Links</string>
+    <string name="ai_info">"启动AI信息窗口"</string>
+    <string name="ai_configuration">"启动AI配置项"</string>
+    <string name="development_opition">"开发者选项"</string>
+    <string name="version_head">"内部版本号："</string>
+    <string name="select_service_url">选择服务器</string>
+    <string name="test_url">测服</string>
+    <string name="normal_url">正服</string>
+    <string name="other_url">其他</string>
+
+    <!-- Bluetooth -->
+    <string name="bt_device_name">"好童学儿童智能终端"</string>
+    <string name="bluetooth_searchstart">正在搜索蓝牙配件 ...</string>
+    <string name="bluetooth_searchstop">点击搜索蓝牙配件</string>
+    <string name="bt_connected">"已连接"</string>
+    <string name="bt_not_connected">"未连接"</string>
+    <string name="bt_connecting">"连接中..."</string>
+    <string name="bt_connect_succeed">"蓝牙配件连接成功"</string>
+    <string name="bt_connect_failure">"蓝牙配件连接失败"</string>
+    <string name="bt_disconnect_event">"蓝牙配件已断开连接"</string>
+    <string name="bt_a2dp_src_mode">"连接蓝牙耳机"</string>
+    <string name="bt_a2dp_sink_mode">"连接手机或平板"</string>
+    <string name="bt_a2dp_sink_tip_1">"1. 请开启手机或平板设备的蓝牙功能，进入蓝牙设备列表界面，点击&lt;font color="#2889FF"&gt;“亲见人工智能视频音箱-(设备序列号后四位数字)”&lt;/font&gt;连接"</string>
+    <string name="bt_a2dp_sink_tip_2">"2. 连接亲见成功后，亲见设备即可当做外放音箱使用，您可以在手机或平板设备中随心播放自己喜欢的歌曲"</string>
+    <string name="bt_a2dp_sink_tip_3">"提示：您可以在”设置-关于亲见-设备序列号“中找到设备序列号后四位数字"</string>
+    <string name="bt_src_device_tip">"已连接蓝牙设备"</string>
+    <string name="bt_src_device_name_unknown">"未知设备"</string>
+    <string name="bt_playing_notification_title">"正在播放..."</string>
+    <string name="bt_playing_notification_content">"已连接蓝牙设备 "</string>
+    <string name="bt_sink_mode_guide">"如何连接手机或平板？"</string>
+    <string name="bt_sink_mode_tip_title">"如何连接手机或平板"</string>
+    <string name="bt_toggle_text">"蓝牙"</string>
+    <string name="bt_enable_tip">"需要打开蓝牙开关才可以正常使用"</string>
+
+    <string name="bluetooth_quick_toggle_title" msgid="1037056952714061893">"蓝牙"</string>
+    <string name="bluetooth_quick_toggle_summary" msgid="5293641680139873341">"打开蓝牙"</string>
+    <string name="bluetooth_settings" msgid="1810521656168174329">"蓝牙"</string>
+    <string name="bluetooth_settings_title" msgid="1908745291161353016">"蓝牙"</string>
+    <string name="bluetooth_settings_summary" msgid="2091062709530570462">"管理连接、设置设备名称和可检测性"</string>
+    <string name="bluetooth_pairing_request" msgid="6385750334766370310">"蓝牙配对请求"</string>
+    <string name="bluetooth_enter_pin_msg" msgid="4954085254142996877">"设备"</string>
+    <string name="bluetooth_pairing_key_msg" msgid="333005542843637754">"配对码"</string>
+    <string name="bluetooth_enter_passkey_msg" msgid="6813273136442138444">"输入配对码，然后按回车键"</string>
+    <string name="bluetooth_enable_alphanumeric_pin" msgid="7222713483058171357">"PIN码由字母或符号组成"</string>
+    <string name="bluetooth_pin_values_hint" msgid="3815897557875873646">"通常为 0000 或 1234"</string>
+    <string name="bluetooth_enter_pin_other_device" msgid="4637977124526813470">"您可能还需要在另一设备上输入此PIN码。"</string>
+    <string name="bluetooth_enter_passkey_other_device" msgid="2798719004030279602">"您可能还需要在另一台设备上输入此密钥。"</string>
+    <string name="bluetooth_pairing_accept" msgid="6163520056536604875">"配对"</string>
+    <string name="bluetooth_pairing_accept_all_caps" msgid="6061699265220789149">"配对"</string>
+    <string name="bluetooth_pairing_decline" msgid="4185420413578948140">"取消"</string>
+    <string name="bluetooth_pairing_will_share_phonebook" msgid="4982239145676394429">"配对之后，所配对的设备将可以在建立连接后访问您的通讯录和通话记录。"</string>
+    <string name="bluetooth_error_title" msgid="6850384073923533096"></string>
+    <string name="bluetooth_preference_scan_title" msgid="2277464653118896016">"扫描设备"</string>
+    <string name="bluetooth_search_for_devices" msgid="2754007356491461674">"刷新"</string>
+    <string name="bluetooth_searching_for_devices" msgid="9203739709307871727">"正在搜索..."</string>
+    <string name="bluetooth_preference_device_settings" msgid="907776049862799122">"设备设置"</string>
+    <string name="bluetooth_preference_paired_dialog_title" msgid="8875124878198774180">"已配对的设备"</string>
+    <string name="bluetooth_preference_paired_dialog_name_label" msgid="8111146086595617285">"名称"</string>
+    <string name="bluetooth_preference_paired_dialog_internet_option" msgid="7112953286863428412">"互联网连接"</string>
+    <string name="bluetooth_preference_paired_dialog_keyboard_option" msgid="2271954176947879628">"键盘"</string>
+    <string name="bluetooth_preference_paired_dialog_contacts_option" msgid="7747163316331917594">"通讯录和通话记录"</string>
+    <string name="bluetooth_pairing_dialog_title" msgid="1417255032435317301">"要与此设备配对吗？"</string>
+    <string name="bluetooth_pairing_dialog_sharing_phonebook_title" msgid="7664141669886358618">"要共享电话簿吗？"</string>
+    <string name="bluetooth_preference_paired_devices" msgid="1970524193086791964">"已配对的设备"</string>
+    <string name="bluetooth_preference_found_devices" msgid="1647983835063249680">"可用设备"</string>
+    <string name="bluetooth_preference_no_found_devices" msgid="7594339669961811591">"未找到任何设备"</string>
+    <string name="bluetooth_device_context_connect" msgid="3997659895003244941">"连接"</string>
+    <string name="bluetooth_device_context_disconnect" msgid="8220072022970148683">"断开连接"</string>
+    <string name="bluetooth_device_context_pair_connect" msgid="7611522504813927727">"配对和连接"</string>
+    <string name="bluetooth_device_context_unpair" msgid="662992425948536144">"取消配对"</string>
+    <string name="bluetooth_device_context_disconnect_unpair" msgid="7644014238070043798">"断开连接和取消配对"</string>
+    <string name="bluetooth_device_context_connect_advanced" msgid="2643129703569788771">"选项…"</string>
+    <string name="bluetooth_menu_advanced" msgid="8572178316357220524">"高级"</string>
+    <string name="bluetooth_advanced_titlebar" msgid="2142159726881547669">"高级蓝牙设置"</string>
+    <string name="bluetooth_empty_list_bluetooth_off" msgid="6351930724051893423">"开启蓝牙后，您的设备可以与附近的其他蓝牙设备通信。"</string>
+    <string name="bluetooth_connect_specific_profiles_title" msgid="6952214406025825164">"连接到..."</string>
+    <string name="bluetooth_profile_a2dp" msgid="2031475486179830674">"媒体音频"</string>
+    <string name="bluetooth_profile_headset" msgid="8658779596261212609">"手机音频"</string>
+    <string name="bluetooth_profile_opp" msgid="9168139293654233697">"文件传输"</string>
+    <string name="bluetooth_profile_hid" msgid="3680729023366986480">"输入设备"</string>
+    <string name="bluetooth_profile_pan" msgid="3391606497945147673">"互联网连接"</string>
+    <string name="bluetooth_profile_pbap" msgid="5372051906968576809">"共享联系人"</string>
+    <string name="bluetooth_profile_sap">SIM卡接入</string>
+    <string name="bluetooth_profile_dun">check</string>
+    <string name="bluetooth_profile_pbap_summary" msgid="6605229608108852198">"用于共享联系人"</string>
+    <string name="bluetooth_profile_pan_nap" msgid="8429049285027482959">"共享互联网连接"</string>
+    <string name="bluetooth_profile_map" msgid="5465271250454324383">"消息权限"</string>
+    <string name="bluetooth_device_advanced_title" msgid="6066342531927499308">"已配对的蓝牙设备"</string>
+    <string name="bluetooth_device_advanced_online_mode_title" msgid="3689050071425683114">"连接"</string>
+    <string name="bluetooth_device_advanced_online_mode_summary" msgid="1204424107263248336">"连接到蓝牙设备"</string>
+    <string name="bluetooth_device_advanced_profile_header_title" msgid="102745381968579605">"用于"</string>
+    <string name="bluetooth_device_advanced_rename_device" msgid="5148578059584955791">"重命名"</string>
+    <string name="bluetooth_device_advanced_enable_opp_title" msgid="8222550640371627365">"允许传入文件"</string>
+    <string name="bluetooth_a2dp_profile_summary_connected" msgid="963376081347721598">"已连接到媒体音频"</string>
+    <string name="bluetooth_headset_profile_summary_connected" msgid="7661070206715520671">"已连接到手机音频"</string>
+    <string name="bluetooth_opp_profile_summary_connected" msgid="2611913495968309066">"已连接到文件传输服务器"</string>
+    <string name="bluetooth_map_profile_summary_connected" msgid="8191407438851351713">"已连接到地图"</string>
+    <string name="bluetooth_opp_profile_summary_not_connected" msgid="1267091356089086285">"未连接到文件传输服务器"</string>
+    <string name="bluetooth_hid_profile_summary_connected" msgid="3381760054215168689">"已连接到输入设备"</string>
+    <string name="bluetooth_pan_user_profile_summary_connected" msgid="4602294638909590612">"经由其他设备连接到互联网"</string>
+    <string name="bluetooth_pan_nap_profile_summary_connected" msgid="1561383706411975199">"与其他设备共享该设备的互联网连接"</string>
+    <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"用于媒体音频"</string>
+    <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"用于手机音频"</string>
+    <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"用于文件传输"</string>
+    <string name="bluetooth_hid_profile_summary_use_for" msgid="232727040453645139">"用于输入"</string>
+    <string name="bluetooth_pan_profile_summary_use_for" msgid="5664884523822068653">"用于连接互联网"</string>
+    <string name="bluetooth_map_profile_summary_use_for" msgid="5154200119919927434">"用于地图"</string>
+    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"基座设置"</string>
+    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"将基座用于音频"</string>
+    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"将基座用作免提电话"</string>
+    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"用于音乐和媒体"</string>
+    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"记住设置"</string>
+    <string name="bluetooth_connected" msgid="6038755206916626419">"已连接"</string>
+    <string name="bluetooth_disconnected" msgid="6557104142667339895">"已断开连接"</string>
+    <string name="bluetooth_disconnecting" msgid="8913264760027764974">"正在断开连接..."</string>
+    <string name="bluetooth_connecting" msgid="8555009514614320497">"正在连接..."</string>
+
+    <!-- alert dialog -->
+    <string name="positive_text">"确定"</string>
+    <string name="negative_text">"取消"</string>
+
+    <!--AI Helper -->
+    <string name="try2say_text">"尝试说“你好小微”"</string>
+
+    <!--Wx Change Account-->
+    <string name="switch_wx_account_tip">网络已断开，无法绑定，请连接网络成功后，再次尝试</string>
+
+    <!--Personal Center-->
+    <string name="phone_number">手机号</string>
+    <string name="verification_code">验证码</string>
+    <string name="bind_phone_number">绑定手机号</string>
+    <string name="switch_phone_number">更换手机号</string>
+    <string name="phone_number_hint">请输入手机号</string>
+    <string name="verification_hint">请输入短信验证码</string>
+    <string name="get_verification_code">获取短信验证码</string>
+    <string name="confirm_text">确定</string>
+    <string name="default_user_name">小微</string>
+    <string name="alert_rebind_dialog_content_1">您的手机号已经绑定过家圆账号</string>
+    <string name="alert_rebind_dialog_content_2">无法重复登录</string>
+    <string name="i_know">知道了</string>
+    <string name="verification_code_sent">验证码已发送</string>
+    <string name="bind_phone_success">手机号绑定成功</string>
+    <string name="bind_phone_fail">手机号绑定失败</string>
+    <string name="verification_code_error">验证码错误</string>
+    <string name="no_network">没有网络呀</string>
+    <string name="countdown_hint">重新获取</string>
+    <string name="send_sms_too_often">发送短信太频繁</string>
+    <string name="send_sms_too_much">发送次数超过每日上限</string>
+</resources>

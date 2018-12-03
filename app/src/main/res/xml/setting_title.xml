@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:preference="http://schemas.android.com/apk/res/com.kinstalk.her.settings"
+    android:title="@string/app_name">
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="settings_bluetooth"
+        preference:setting_title="@string/settings_bluetooth_title"
+        preference:setting_info="@string/settings_not_connect"
+        preference:setting_info_major="true"/>
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="setting_network"
+        preference:setting_title="@string/settings_network_title"
+        preference:setting_info="@string/settings_not_connect"
+        preference:setting_info_major="true"/>
+
+    <!--<com.kinstalk.her.settings.view.views.SettingPrefrence-->
+        <!--android:key="setting_setting"-->
+        <!--preference:setting_title="@string/settings_setting_title"-->
+        <!--preference:setting_info=""-->
+        <!--preference:setting_info_major="true"/>-->
+
+<!--    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="setting_ai"
+        preference:setting_title="@string/settings_ai_title"
+        preference:setting_info=""
+        preference:setting_info_major="true"/>-->
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="setting_change_wx_account"
+        preference:setting_title="@string/setting_change_wx_account_title"
+        preference:setting_info=""/>
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="setting_unbind"
+        preference:setting_title="@string/setting_about_unbind_account"
+        preference:setting_info=""/>
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="setting_personal_center"
+        preference:setting_title="@string/setting_personal_center"
+        preference:setting_info=""/>
+
+    <com.kinstalk.her.settings.view.views.SettingPrefrence
+        android:key="setting_about"
+        preference:setting_title="@string/settings_about_title"
+        preference:setting_info=""
+        preference:setting_info_major="true"/>
+</PreferenceScreen>
